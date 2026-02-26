@@ -15,16 +15,32 @@ void draw() {
 (see the image on the recipe, it's a diagonal line of circles)
 Use remainder to make the colors alternate between yellow and black
 */
-
+  drawBeeBody(0, 0);
 
 
 /*
 Now put his head on using drawBeeFace(x,y)
 */
-
+  
 }
 
 /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
+
+void drawBeeBody(int BeeBodyX, int BeeBodyY){
+  for (int i = 0; i < 20 ; i++){
+    if (i % 2 == 0){
+      fill(255, 251, 28);
+      ellipse(BeeBodyX, BeeBodyY, 60, 60);
+    }
+    else{
+      fill(0, 0, 0);
+      ellipse(BeeBodyX, BeeBodyY, 60, 60);
+    }
+    BeeBodyX += 20;
+    BeeBodyY += 20;
+  }
+  drawBeeFace(BeeBodyX, BeeBodyY);
+}
 
 void drawFlower(int x, int y) {
      noStroke();

@@ -20,7 +20,7 @@ public class If_statment_Game {
 	}
 	
 	static void random_pick() {
-		int random = new Random().nextInt(2 - 1) + 1;
+		int random = new Random().nextInt(3 - 1) + 1;
 		if(random == 1) {
 			bush();
 		}
