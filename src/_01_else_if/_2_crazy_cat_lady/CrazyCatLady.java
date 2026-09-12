@@ -17,7 +17,7 @@ public class CrazyCatLady {
 			JOptionPane.showMessageDialog(null,"you are a crazy cat lady");
 		}
 		else if (kats<3&&(kats>0)){
-			JOptionPane.showMessageDialog(null,"you are a crazy cat lady");
+			playVideo("https://www.youtube.com/watch?v=uFq2zqo8mqo&pp=ygUfY2F0c3ludGggICd0aGUgd29ybGQgcmV2b2x2aW5nJw%3D%3D");
 		}
 		else {
 			playVideo("https://www.youtube.com/watch?v=VLVdjLbXdm4");
