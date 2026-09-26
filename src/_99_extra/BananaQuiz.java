@@ -9,7 +9,12 @@ public class BananaQuiz
 	public static void main(String[] args)
 	{
 		//1. ask the user if they like bananas
+		String Q = JOptionPane.showInputDialog(null, "Do you like bannanas?");
 		//2. if they say no, 
+		if (Q == "no") {
+			JOptionPane.showMessageDialog(null, "you are crazy");
+			System.exit(0);
+		}
 			//tell them they are crazy 
 			//and end quiz
 		//3. if they say yes
